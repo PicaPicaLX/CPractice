@@ -4,10 +4,12 @@ int main()
 	/*print();
 	hello();
 	nice();
-	longp();
 	printp();
-	area();*/
-	FormartNum();
+	area();
+	FormartIntNum();
+	FormatFloNum();
+	FormatDoubNum();*/
+	FormatLDoubNum();
 }
 
 int print()
@@ -39,26 +41,6 @@ int hello()
 int nice()
 {
 	printf("What a nice day !\n");
-	system("pause");
-	return 0;
-}
-
-int longp()
-{
-	char cChar1;
-	char cChar2;
-	int iInt1;
-	int iInt2;
-	cChar1 = 'a';
-	cChar2 = 97;
-	iInt1 = 'a';
-	iInt2 = 97;
-	printf("%c\n",cChar1);
-	printf("%c\n",cChar2);
-	printf("%c\n", iInt1);
-	printf("%c\n", iInt2);
-	/*printf("%c\n", iInt1);*/
-	/*printf("%c\n", iInt2);*/
 	system("pause");
 	return 0;
 }
@@ -95,4 +77,52 @@ int FormartIntNum()
 	return 0;
 }
 
-int 
+int FormatFloNum()
+{
+	float fFloatStyle;
+	printf("请输入一个小数: ");
+	scanf_s("%f", &fFloatStyle);
+	printf("%f\n", fFloatStyle);
+	system("pause");
+	return 0;
+}
+
+int FormatDoubNum()
+{
+	double dDoubleStyle;
+	scanf_s("%lf", &dDoubleStyle);
+	/*dDoubleStyle = 6.1112222;*/
+	printf("%lf\n", dDoubleStyle);
+	system("pause");
+	return 0;
+}
+
+int FormatLDoubNum()
+{
+	long double fLongDouble;
+	printf("输入一个数字: ");
+	scanf_s("%lf", &fLongDouble);
+	printf("数字是: %f\n", fLongDouble);
+	system("pause");
+	return 0;
+}
+
+int Char()
+{
+	char cChar1;
+	char cChar2;
+	int iInt1;
+	int iInt2;
+	cChar1 = 'a';
+	cChar2 = 97;
+	iInt1 = 'a';
+	iInt2 = 97;
+	printf("%c\n", cChar1);
+	printf("%c\n", cChar2);
+	printf("%c\n", iInt1);
+	printf("%c\n", iInt2);
+	/*printf("%c\n", iInt1);*/
+	/*printf("%c\n", iInt2);*/
+	system("pause");
+	return 0;
+}
