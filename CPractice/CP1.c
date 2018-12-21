@@ -85,7 +85,7 @@ int area()
 	return 0;
 }
 
-int FormartNum()
+int FormartIntNum()
 {
 	signed int iNumber;
 	printf("请输入数字: ");
@@ -94,3 +94,5 @@ int FormartNum()
 	system("pause");
 	return 0;
 }
+
+int 
