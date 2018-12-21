@@ -8,8 +8,10 @@ int main()
 	area();
 	FormartIntNum();
 	FormatFloNum();
-	FormatDoubNum();*/
-	FormatLDoubNum();
+	FormatDoubNum();
+	FormatLDoubNum();*/
+	UseAuto();
+
 }
 
 int print()
@@ -126,3 +128,22 @@ int Char()
 	system("pause");
 	return 0;
 }
+
+void Addone()
+{
+	auto int iInt = 1;
+	iInt = iInt + 1;
+	printf("%d\n", iInt);
+}
+
+int UseAuto()
+{
+	printf("第一次调用: ");
+	Addone();
+	printf("第二次调用: ");
+	Addone();
+	system("pause");
+	return 0;
+}
+
+
