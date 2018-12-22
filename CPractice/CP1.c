@@ -1,4 +1,4 @@
-﻿#include<stdio.h>
+﻿#include <stdio.h>
 int main()
 {
 	/*print();
@@ -9,8 +9,12 @@ int main()
 	FormartIntNum();
 	FormatFloNum();
 	FormatDoubNum();
-	FormatLDoubNum();*/
-	UseAuto();
+	FormatLDoubNum();
+	UseAuto();*/
+	UseStatic();
+	UseRegister();
+	UseEntern();
+	MixOper();
 
 }
 
@@ -129,13 +133,6 @@ int Char()
 	return 0;
 }
 
-void Addone()
-{
-	auto int iInt = 1;
-	iInt = iInt + 1;
-	printf("%d\n", iInt);
-}
-
 int UseAuto()
 {
 	printf("第一次调用: ");
@@ -146,4 +143,44 @@ int UseAuto()
 	return 0;
 }
 
+int UseStatic()
+{
+	printf("第一次调用: ");
+	PlueOne();
+	printf("第二次: ");
+	PlueOne();
+
+	system("pause");
+	return 0;
+}
+
+int UseRegister()
+{
+	register int iInt;
+	iInt = 100;
+	printf("%d\n",iInt);
+	system("Pause");
+	return 0;
+}
+
+int UseEntern()
+{
+	extern int iExtern;
+	printf("%d\n", iExtern); /*在CP2.c文件中将整形12赋值给了iExtern*/
+	system("pause");
+	return 0;
+}
+
+int MixOper()
+{
+	int iInt = 1;
+	char cChar = 'A';
+	float fFloat = 2.11f;
+
+	double result = iInt + cChar + fFloat;
+
+	printf("结果: %f\n", result);
+	system("pause");
+	return 0;
+}
 

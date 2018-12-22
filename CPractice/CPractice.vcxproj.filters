@@ -18,5 +18,11 @@
     <ClCompile Include="CP1.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="voids.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Externs.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
