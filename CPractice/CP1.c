@@ -10,11 +10,11 @@ int main()
 	FormatFloNum();
 	FormatDoubNum();
 	FormatLDoubNum();
-	UseAuto();*/
+	UseAuto();
 	UseStatic();
 	UseRegister();
 	UseEntern();
-	MixOper();
+	MixOper();*/
 
 }
 
